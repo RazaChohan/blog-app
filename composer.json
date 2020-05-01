@@ -1,0 +1,14 @@
+{
+  "require": {
+    "altorouter/altorouter": "^1.2"
+  },
+  "autoload": {
+    "files": [],
+    "psr-4": {
+      "controllers\\": "controllers/",
+      "middlewares\\": "middlewares/",
+      "models\\": "models/",
+      "router\\": "router/"
+    }
+  }
+}
