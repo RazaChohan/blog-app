@@ -3,12 +3,9 @@
     "altorouter/altorouter": "^1.2"
   },
   "autoload": {
-    "files": [],
+    "files": ["app/helpers.php"],
     "psr-4": {
-      "controllers\\": "controllers/",
-      "middlewares\\": "middlewares/",
-      "models\\": "models/",
-      "router\\": "router/"
+      "App\\": "app/"
     }
   }
 }
