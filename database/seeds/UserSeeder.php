@@ -20,7 +20,7 @@ class UserSeeder extends AbstractSeed
                 'username' => 'main_user',
                 'first_name' => 'Blog',
                 'last_name' => 'User',
-                'password' => sha1(md5('Blog123')),
+                'password' => getHashedValue('Blog123'),
                 'created' => date('Y-m-d H:i:s'),
             ]
         ];

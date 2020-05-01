@@ -36,5 +36,13 @@ return [
             MiddlewareType::POST => ''
         ]
     ],
+    'Auth.loginPost' => [
+        'method'       => 'POST',
+        'path'         => '/login',
+        'Middlewares'  => [
+            MiddlewareType::PRE   => '',
+            MiddlewareType::POST => ''
+        ]
+    ]
 
 ];
