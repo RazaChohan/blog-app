@@ -1,6 +1,10 @@
 <html>
 <h1>Welcome to Blog Application</h1>
-<a href="/login">Login Here..</a>
+<?php if (isUserAuthenticated()): ?>
+    <a href="/logout">Logout</a>
+<?php else: ?>
+    <a href="/login">Login</a>
+<?php endif; ?>
 <div>
     <?php if (!empty($data['blogs'])): ?>
         <?php foreach ($data['blogs'] as $blog): ?>

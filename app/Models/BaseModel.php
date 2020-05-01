@@ -31,7 +31,7 @@ class BaseModel
     {
         $offset = null;
         if(!is_null($page) && !is_null($limit)) {
-            $offset = ($page - 1) * $limit;
+            $offset = calculateOffset($page, $limit);
         }
         $query = is_null($query) ? "select * from $tableName" : $query;
         $query .= is_null($limit) ? '' : " limit $limit";

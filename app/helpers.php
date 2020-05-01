@@ -132,3 +132,13 @@ function calculateOffset($page, $limit)
 {
     return ($page - 1) * $limit;
 }
+
+/***
+ * is user authenticated
+ *
+ * @return bool
+ */
+function isUserAuthenticated()
+{
+    return isset($_SESSION['user']);
+}
