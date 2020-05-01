@@ -120,3 +120,15 @@ function getFolderPath($type)
     }
     return $folderPath;
 }
+
+/***
+ * Calculate offset
+ *
+ * @param $page
+ * @param $limit
+ * @return float|int
+ */
+function calculateOffset($page, $limit)
+{
+    return ($page - 1) * $limit;
+}
